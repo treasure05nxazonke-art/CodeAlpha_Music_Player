@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Alpha Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<div class="player-container" id="player">
+
+    <h2 class="title">Treasure's Music Player</h2>
+
+    <div class="song-info">
+        <h3 id="song-title">Select a Song</h3>
+        <p id="song-artist">Artist</p>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress-bar" value="0">
+        <span id="duration">0:00</span>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button class="btn" id="prev">&#9664;</button>
+        <button class="btn" id="play">▶</button>
+        <button class="btn" id="next">&#9654;&#9654;</button>
+        <button class="btn" id="shuffle">🔀</button> <!-- Shuffle button -->
+    </div>
+
+    <!-- Volume -->
+    <div class="volume-control">
+        <label>Volume</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01">
+    </div>
+
+    <!-- Playlist inside player -->
+    <h3 class="playlist-title">Playlist</h3>
+    <div class="playlist-wrapper">
+        <div id="playlist" class="playlist-grid"></div>
+    </div>
+    <p class="copyright-note">
+    ⚠️ I do not own the rights to any of the songs used in this music player. 
+    All audio belongs to the respective artists and copyright holders.
+</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
