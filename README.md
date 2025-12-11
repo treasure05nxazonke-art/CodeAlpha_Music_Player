@@ -6,8 +6,7 @@ This was my most challenging task, but also the most rewarding. I learned, strug
 
 🌟 Live Demo
 
-👉 (Add link if you publish it on GitHub Pages or Netlify)
-
+👉  https://treasure05nxazonke-art.github.io/CodeAlpha_Music_Player/
 
 ✨ Features
 
