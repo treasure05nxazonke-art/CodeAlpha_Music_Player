@@ -151,3 +151,12 @@ body {
     line-height: 1.4;
     text-align: center;
 }
+
+.error-message {
+    font-size: 12px;
+    color: #ff4f4f;
+    margin-top: 8px;
+    text-align: center;
+    display: none; /* hidden until needed */
+}
+
