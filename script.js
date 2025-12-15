@@ -140,3 +140,17 @@ shuffleBtn.addEventListener("click", () => {
     playBtn.textContent = "⏸";
 });
 
+// Detect iOS Devices
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+const iosError = document.getElementById("ios-error");
+
+if (isIOS) {
+    // Show error
+    iosError.textContent = "⚠️ Volume control is disabled on iPhone. Please use your physical volume buttons.";
+    iosError.style.display = "block";
+
+    // Disable slider
+    volumeSlider.disabled = true;
+    volumeSlider.style.opacity = "0.4";  // Make it look inactive
+}
+
